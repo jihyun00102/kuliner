@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 외부에서 가져온 파일은 내가 작성할 파일보다 무조건 위쪽에 선언한다. 내가 만든 파일이 우선되어야함 -->
+    <script src="https://kit.fontawesome.com/c2a8ed99bd.js"></script>
+    <script src="./js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- 와우를 받아서 초기화시키겠다는 의미 -->
+</head>
+<body>
+    <div id="header">
+        <div class="top">
+            <div class="wrap">
+                <div class="left">
+                    <ul>
+                        <li><p><i class="far fa-map"></i>&nbsp;Jl. Little Kyoto SA, 01 64521</p></li>
+                        <li><p><i class="fas fa-phone-square-alt"></i>&nbsp;023 5608 466</p></li>
+                        <!-- 전화 연결(모바일버전)
+                        a태그 사용 후 href에 tel띄어쓰기 하지않은 전화번호 입력 -->
+                    </ul>
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#" target="_blank" title="페이스북 바로가기"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" target="_blank" title="트위터 바로가기"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" target="_blank" title="핀터레스트 바로가기"><i class="fab fa-pinterest-square"></i></a></li>
+                        <li><a href="#" target="_blank" title="유튜브 바로가기"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="mailto:custmer@naver.com" title="메일 보내기"><i class="far fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="dark">
+                <div class="wrap">
+                    <div class="logo"><a href="#"><img src="./img/logo.png" alt=""></a></div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">OUR STORY</a></li>
+                            <li><a href="#">SPECIAL DISHES</a></li>
+                            <li><a href="#">DISHES</a></li>
+                            <li><a href="#">SERVICE</a></li>
+
+                            <div class="r_button">
+                                <button>RESERVATION</button>
+                            </div>
+                        </ul>
+                    </div>
+                </div><!--/ warp 헤더의 메뉴 공간-->
+                <div class="main_title">
+                    <div class="title_wrap">
+                        <h1 class="font_pacifico wow fadeInDown">Premium food at affordable price.</h1>
+                        <p class="wow fadeInUp">A truly unique Danish food experience, you can get at lunch time in Kyoto</p>
+                        <div class="main_Btn">
+                            <ul>
+                                <li class="wow fadeInLeft"><a href="">learn more</a></li>
+                                <li class="wow fadeInRight"><a href="">get the app</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- / dark -->
+        </div>
+    </div>  <!-- / header -->
+
+    <div id="story">
+        <div class="wrap">
+            <div class="txt_part">
+                <h2 class="title font_pacifico wow fadeInDown">Discover <span class="font_pacifico">Our Story</span></h2>
+                <p class="wow fadeInUp">HI, WELCOME TO KULINER</p>
+            </div>
+            <div class="cont">
+                <div class="img wow fadeInLeft"></div>
+                <div class="txt wow fadeInRight">
+                    <p>In a country where understatement and simplicity reign, the unpretentious smorrebrod is a national dish. There are countless variations, from minimal to lavish, but all reflect straightforward Scandinavian sensibilities: simple, honest, local ingredients attractively presented with little waste</p>
+                    <a href="#"><img src="./img/separator-img.png" alt="하단정렬이미지"></a>
+                </div>
+            </div> <!--/cont-->
+            <div class="plate wow fadeInUp">
+                <img src="./img/description-1.png" alt="젒; 데코 이미지">
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<!-- 폰트어썸 하는 법
+보통 밑 바디 끝나는 부분에 함
+가입해서 자바 주소 넣고 i태그 복사 붙여넣기 -->
+
+<!-- 따로 쓰는 경우 
+* 꼭 버튼 안 써도 됨
+부모가 right이면 자식을 가로배치 시키키 위해서는 left면 충분하다  두개이상이면 ul/ li 이다 ★-->
+
+<!-- 레이아웃 상에서 강제성의 우선순위
+1.position
+2.float
+3.inline-block -->
+
+<!-- span 은 부모에게 상속받지않고 전체선택자에 영향을 받는다 -->

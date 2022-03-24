@@ -1,0 +1,121 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Source Sans Pro', sans-serif;
+*/
+
+*{box-sizing: border-box; font-family: 'Source Sans Pro', sans-serif;}
+html, body{margin: 0; padding: 0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.font_pacifico{font-family: 'Pacifico', cursive;}
+
+/* header part */
+#header{}
+
+#header .top{width: 100%; height: 30px; background-color: #000;}
+#header .top .wrap{width: 1160px; padding: 0 10px; margin: 0 auto;}
+
+#header .top .wrap .left{float: left;} /*부모 공간으로부터 좌측에 배치*/
+#header .top .wrap .left ul{}
+#header .top .wrap .left ul li{float: left; padding-right: 10px;} /*내부에서 좌측 기준으로 가로배치*/
+#header .top .wrap .left ul li p{color: #fff; line-height: 30px; font-size: 14px;}
+
+#header .top .wrap .right{float: right;} /*부모 공간으로부터 우측에 배치*/
+#header .top .wrap .right ul{}
+#header .top .wrap .right ul li{float: left; margin-left: 10px;}
+#header .top .wrap .right ul li a{color: #fff; line-height: 30px; display: block;}
+#header .top .wrap .right ul li:hover a{color: #f60;}
+
+#header #main{background-image: url(../img/1.jpg);
+background-size: cover; background-position: 50% 50%; width: 100%; height: 560px; background-attachment: fixed;}
+#header #main .dark{height: 100%; background-color: rgba(0, 0, 0, 0.5)}
+#header #main .dark .wrap{ width: 1160px; margin: 0 auto; padding: 0 10px; height: 66px;}
+
+#header #main .dark .wrap .logo{padding: 17px 0; display: inline-block;}
+#header #main .dark .wrap .logo a{}
+#header #main .dark .wrap .logo a img{display: block;}
+
+#header #main .dark .wrap .menu{float: right;}
+#header #main .dark .wrap .menu ul{float: left;}
+#header #main .dark .wrap .menu ul li{float: left;}
+#header #main .dark .wrap .menu ul li a{font-size: 16px; font-weight: bold; line-height: 66px; color: #fff; display: block; padding: 0 20px;}
+#header #main .dark .wrap .menu ul li:hover a{background-color: rgba(255,255,255,0.6); color: #f60;}
+
+
+#header #main .dark .wrap .menu .r_button{width: 180px; float: left; padding-top: 12px;}
+#header #main .dark .wrap .menu .r_button button{ padding: 10px 14px; background-color: #f60; border: 1px solid #f60; border-radius: 4px; font-size: 16px; font-weight: bold; color: #fff; float: right;}
+
+#header #main .dark .wrap .menu .r_button:hover button{background-color: #fff; color: #f60;}
+
+/* main img part */
+/* 메인이미지 크기 560(메인이미지) -66(헤더공간) = 494px */
+
+
+/* 부모를 기준으로 position을 주어 중앙배치하기 */
+#header #main .dark .main_title{width: 1160px; height: 494px; margin: 0 auto; position: relative; text-align: center; padding: 0 10px;}
+#header #main .dark .main_title .title_wrap{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+
+/* 
+
+부모기준으로 display table을 주어 중앙배치
+
+#header #main .dark .main_title
+{width: 1160px; height: 494px; 
+margin: 0 auto; padding: 0 10px;
+display:table;}
+
+#header #main .dark .main_title .title_wrap
+{display:table-cell;
+text-align:center; vertical-align:center;
+color:#fff;}
+
+*/
+
+/* position써야하는 경우
+img 태그를 사용시 ex: 상품 홈페이지 상품칸에 로고 붙이기*/
+
+
+#header #main .dark .main_title h1{font-size: 54px; line-height: 72px; color: #fff; width: 1160px;}
+#header #main .dark .main_title p{font-size: 14px; color: #fff; padding: 40px 0;}
+
+#header #main .dark .main_title .main_Btn{}
+#header #main .dark .main_title .main_Btn ul{font-size: 0;}
+#header #main .dark .main_title .main_Btn ul li{display: inline-block; margin: 0 10px;}
+#header #main .dark .main_title .main_Btn ul li a{display: block; font-size: 16px; border: 1px solid #f60; color: #fff; width: 202px; height: 42px; line-height: 42px;
+border-radius: 8px; font-weight: bold; text-transform:capitalize;}
+/* border 값 빼는 거 잊지 말기 ★ */
+
+#header #main .dark .main_title .main_Btn ul li:hover a{color: #f60; background-color: rgba(255,255,255,0.4);}
+
+/* section 1 part */
+#story{overflow: hidden;}
+#story .wrap{width: 1160px; height: 600px; margin: 0 auto;}
+
+#story .wrap .txt_part{text-align: center; padding-top: 60px;}
+#story .wrap .txt_part .title{padding-bottom: 20px; font-size: 54px; line-height: 72px; color: #555;}
+#story .wrap .txt_part .title span{color: #f60;}
+#story .wrap .txt_part p{padding-bottom: 40px; font-size: 16px; color: #555;}
+
+#story .wrap .cont{width: 100%; padding: 0 15px; font-size: 0;}
+#story .wrap .cont > div{padding: 0 15px; border-radius: 8px; width: 50%; display: inline-block; vertical-align: middle;}
+#story .wrap .cont .img{height: 200px; background-image: url(../img/cook-01.jpg); background-size: cover; background-position: 50% 80%;}
+#story .wrap .cont .txt{text-align: center;}
+#story .wrap .cont .txt p{font-size: 16px; color: #555; padding-bottom: 40px;}
+
+#story .wrap .cont .txt a{display: inline-block; height: 19px;}
+
+/* display: inline-block 
+전체에 fx0, 중앙정렬하고 싶은 곳에 dib - vam ☆
+즉, 형제구조에서 float:left;를 선언하면 부모의 좌상단을 보며 가로배치(수직방향 위치조정불가) / 형제구조에서 dib 선언시 후손의 하단으로 정렬 (수직방향 위치조정가능) */
+/* img 에 padding-top X 왜? 위로 밀기때문에 이미지도 같이 밀려 잘림 */
+
+#story .wrap .plate{padding-top: 100px;}
+#story .wrap .plate img{width: 100%;}
+
+
+

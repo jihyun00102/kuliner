@@ -603,7 +603,9 @@ position: absolute; bottom: 20px; right: 20px;}
 /* top button (상단으로 이동) */
 #topBtn{
     position: fixed;
-    bottom: 20px; right: 20px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
 }
 
 #topBtn a{
@@ -615,6 +617,7 @@ position: absolute; bottom: 20px; right: 20px;}
     background-color: #f60;
     color: #fff;
     border-radius: 4px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
 
